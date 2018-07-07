@@ -11,6 +11,9 @@ class App < Sinatra::Base
   end
   
   post '/' do
+    @breed = params[:breed]
+    @age = params[:age]
+    @name = params[:name]
     erb :display_puppy
   end
 
